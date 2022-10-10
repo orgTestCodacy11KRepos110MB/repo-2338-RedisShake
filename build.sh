@@ -29,7 +29,7 @@ dist() {
 
 if [ "$1" == "dist" ]; then
     echo "[ DIST ]"
-    for g in "linux" "darwin"; do
+    for g in "linux" "darwin" "windows"; do
         for a in "amd64" "arm64"; do
             dist "$g" "$a"
         done
